@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background: $background-light;
+    color: $color-dark;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: $weight-norm;
+    // letter-spacing: 0.02rem;
+    scroll-behavior: smooth;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    transition: background 0.2s linear;
+    // unsure about these two
+    height: 100%;
+    width: 100%;
+}
+
+body.dark {
+    background: $background-dark;
+    color: $color-light;
+}
+
+.App {
+	text-align: center;
+	p {
+		@include respond(phone) {
+			color: blue;
+		}
+	}
+}
+
+a {
+    color: $color-blue;
+	text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}

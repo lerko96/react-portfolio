@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import './App.scss';
+// import Greet from './components/Greet';
+import Nav from './components/Nav/Nav';
+import SideNav from './components/SideNav/SideNav.js';
+import Profile from './components/Profile/Profile.js';
+import Projects from './components/Projects/Projects';
+import Footer from './components/Footer/Footer';
+import Main from './components/Main/Main';
+
+// fix dark mode
+function mySwitch() {
+	var element2 = document.body;
+	element2.classList.toggle('dark');
+}
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Nav />
+			<SideNav />
+      <Main />
+      <Footer />
+		</div>
+	);
 }
 
 export default App;
