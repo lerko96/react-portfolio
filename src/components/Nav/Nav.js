@@ -6,16 +6,16 @@ const Nav = () => (
 			<div id='logo'>
 				<a href='index.html'>tk</a>
 			</div>
-			<div id="nav__list">
+			<div id='nav__list'>
 				<ul>
-					<li>
-						<a href='#about' target='_self'>
-							ABOUT
-						</a>
-					</li>
 					<li id='nav__contact'>
 						<a href='#contact' target='_self'>
 							CONTACT
+						</a>
+					</li>
+					<li>
+						<a href='#profile' target='_self'>
+							PROFILE
 						</a>
 					</li>
 					<li>
