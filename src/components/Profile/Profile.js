@@ -8,36 +8,50 @@ import headshot from '../../images/headshot-tyler_koenig.png';
 
 const Profile = () => (
 	<section id='profile'>
-		<article class='profile__top'>
-			<div class='top__img'>
+		<article class='profile__card'>
+			<div class='card__img'>
 				<img id='headshot' src={headshot} alt='tyler' />
 			</div>
-			<div class='top__bio'>
-				<a href='index.html'>TYLER KOENIG</a>
-				<p>SOFTWARE DEVELOPER</p>
+			<div class='card__bio'>
+				<div class='bio__name'>
+					<a href='index.html'>TYLER KOENIG</a>
+				</div>
+				<div class='bio__desc'>
+					<p>SOFTWARE DEVELOPER</p>
+				</div>
+				<div class='bio__contacts' id='contact'>
+					<a
+						href='https://www.linkedin.com/in/tyler-koenig-72607a18b/'
+						target='_blank'
+						title='LinkedIn'
+					>
+						<i
+							class='fa fa-linkedin-square fa-2x'
+							aria-hidden='true'
+						></i>
+					</a>
+					<a
+						href='https://github.com/lerko96'
+						target='_blank'
+						title='github'
+					>
+						<i class='fa fa-github fa-2x' aria-hidden='true'></i>
+					</a>
+					<a
+						href='mailto:tylerkng96@icloud.com'
+						target='_blank'
+						title='email'
+					>
+						<i
+							class='fa fa-envelope-o fa-2x'
+							aria-hidden='true'
+						></i>
+					</a>
+				</div>
 			</div>
 		</article>
-		<article class='profile__contacts' id='contact'>
-			<a
-				href='https://www.linkedin.com/in/tyler-koenig-72607a18b/'
-				target='_blank'
-				title='LinkedIn'
-			>
-				<i class='fa fa-linkedin-square fa-2x' aria-hidden='true'></i>
-			</a>
-			<a href='https://github.com/lerko96' target='_blank' title='github'>
-				<i class='fa fa-github fa-2x' aria-hidden='true'></i>
-			</a>
-			<a
-				href='mailto:tylerkng96@icloud.com'
-				target='_blank'
-				title='email'
-			>
-				<i class='fa fa-envelope-o fa-2x' aria-hidden='true'></i>
-			</a>
-		</article>
 		<article class='profile__about'>
-			<h2>about</h2>
+			{/* <h2>about</h2> */}
 			<p>
 				I'm Tyler Koenig, a lifelong student. Graduated with an
 				Associate of Arts from Lorain County Community College in 2018.
@@ -46,7 +60,7 @@ const Profile = () => (
 				IT Bootcamp. Always interested in a challenge!
 			</p>
 		</article>
-		<article class='profile__skills' id="skills">
+		<article class='profile__skills' id='skills'>
 			<h2>skills</h2>
 			<ul>
 				<li>Java</li>
