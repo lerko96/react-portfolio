@@ -12,10 +12,17 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	#logo {
-        font-size: $fs-big;
+		font-size: $fs-big;
 		font-weight: $weight-heavy;
         letter-spacing: 0.2rem;
         margin-left: 8px;
+		a {
+			color: $color-grey;
+			
+		}
+		a:hover {
+			color: $color-dark;
+		}
 	}
 	#nav__list {
 		text-align: end;

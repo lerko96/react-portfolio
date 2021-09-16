@@ -14,15 +14,13 @@ function mySwitch() {
 	element2.classList.toggle('dark');
 }
 
-
-
 function App() {
 	return (
 		<div className='App'>
 			<Nav />
 			<SideNav />
-      <Main />
-      <Footer />
+			<Main />
+			<Footer />
 		</div>
 	);
 }

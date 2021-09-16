@@ -1,7 +1,14 @@
 import React from 'react';
 
+import wereHooked from '../../images/were-hooked.png';
+import donutClicker from '../../images/donut-clicker.png';
+import mysteryEducator from '../../images/mystery-educator.png';
+import trekkingSite from '../../images/trek.png';
+import reviewSite from '../../images/review-site.png';
+
+
 const Projects = () => (
-		<section class='card' id='projects'>
+		<section id='projects'>
 			<h2>projects</h2>
 			<article class='project'>
 				<a
@@ -11,7 +18,7 @@ const Projects = () => (
 				>
 					<img
 						class='project__img'
-						src='/images/were-hooked.png'
+						src={wereHooked}
 						alt='were-hooked-img'
 					/>
 				</a>
@@ -69,7 +76,7 @@ const Projects = () => (
 				>
 					<img
 						class='project__img'
-						src='/images/mystery-educator.png'
+						src={mysteryEducator}
 						alt=''
 					/>
 				</a>
@@ -126,7 +133,7 @@ const Projects = () => (
 				>
 					<img
 						class='project__img'
-						src='/images/donut-clicker.png'
+						src={donutClicker}
 						alt='donut-clicker-img'
 					/>
 				</a>
@@ -175,7 +182,7 @@ const Projects = () => (
 				>
 					<img
 						class='project__img'
-						src='/images/trek.png'
+						src={trekkingSite}
 						alt='trekking-img'
 					/>
 				</a>
@@ -229,7 +236,7 @@ const Projects = () => (
 				>
 					<img
 						class='project__img'
-						src='/images/review-site.png'
+						src={reviewSite}
 						alt='review-site-img'
 					/>
 				</a>

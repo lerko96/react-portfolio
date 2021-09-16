@@ -51,7 +51,7 @@ const Profile = () => (
 			</div>
 		</article>
 		<article class='profile__about'>
-			{/* <h2>about</h2> */}
+			<h2>about</h2>
 			<p>
 				I'm Tyler Koenig, a lifelong student. Graduated with an
 				Associate of Arts from Lorain County Community College in 2018.
