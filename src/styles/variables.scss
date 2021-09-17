@@ -13,10 +13,13 @@ $color-green: #2bf3c4;
 
 $fs-big: 2.4rem;
 
+$fw-light: 300;
+$weight-norm: 400;
 $weight-mid: 500;
 $weight-heavy: 700;
-$weight-norm: 400;
 
 $transition-hl: 150ms ease;
 
-$shadow-360: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+$shadow-360: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+$shadow-360-og: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+$shadow-360-inset: inset -10px -20px 20px 1px rgba(0, 0, 0, 0.2);

@@ -8,11 +8,11 @@ const Nav = () => (
 			</div>
 			<div id='nav__list'>
 				<ul>
-					<li id='nav__contact'>
+					{/* <li id='nav__contact'>
 						<a href='#contact' target='_self'>
 							CONTACT
 						</a>
-					</li>
+					</li> */}
 					<li>
 						<a href='#profile' target='_self'>
 							PROFILE
@@ -23,11 +23,11 @@ const Nav = () => (
 							PROJECTS
 						</a>
 					</li>
-					<li>
+					{/* <li>
 						<a href='#skills' target='_self'>
 							SKILLS
 						</a>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 		</nav>
