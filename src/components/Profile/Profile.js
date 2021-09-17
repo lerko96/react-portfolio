@@ -57,8 +57,8 @@ const Profile = () => (
 				Development. I graduated with an Associate of Arts from Lorain
 				County Community College in Spring of 2018. I began building
 				HTML, CSS and JavaScript projects by the Summer of 2020 from
-				courses provided on Udemy. I received my Software Development
-				Certificate in Fall of 21' from We Can Code IT. Thanks to the
+				courses provided on Udemy. I received my Certificate in Software
+				Development from We Can Code IT in Fall of 2021. Thanks to the
 				courses I've taken, I have developed strong skills needed for
 				working in remote team environments, and ones that utilize Scrum
 				and Agile practices. My passion comes from seeing ideas be

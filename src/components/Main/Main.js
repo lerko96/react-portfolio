@@ -3,7 +3,7 @@ import Profile from '../Profile/Profile';
 import Projects from '../Projects/Projects';
 
 const Main = () => (
-	<div class='wrapper'>
+	<div class='wrapper_main'>
 		<Profile />
 		<Projects />
 	</div>

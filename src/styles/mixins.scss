@@ -1,10 +1,15 @@
 @mixin respond($breakpoint) {
-	@if $breakpoint == phone-plus {
-		@media (min-width: 414px) {
+	@if $breakpoint == xsm {
+		@media (max-width: 576px) {
 			@content;
 		}
 	}
-	@if $breakpoint == tab-mini {
+	@if $breakpoint == sm {
+		@media (min-width: 576px) {
+			@content;
+		}
+	}
+	@if $breakpoint == med {
 		@media (min-width: 668px) {
 			@content;
 		}
