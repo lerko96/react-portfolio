@@ -1,0 +1,80 @@
+.App {
+	@include respond(xsm) {
+		@media (prefers-reduced-motion: no-preference) {
+			animation: appScaleRv 500ms alternate 1 ease forwards;
+			// 	// animation-delay: 1s;
+		}
+		@keyframes appScaleRv {
+			from {
+				transform: scale(1.09);
+			}
+			to {
+				transform: scale(1);
+			}
+		}
+		.profile__about,
+		.profile__skills,
+		#projects {
+			animation: lowerApp 1000ms normal 1 ease-out backwards;
+
+			@keyframes lowerApp {
+				from {
+					transform: translateY(300px);
+				}
+				to {
+					transform: translateY(0px);
+				}
+			}
+		}
+	}
+	@include respond(sm) {
+		margin: 0 auto;
+		max-width: 768px;
+
+		#headshot {
+			@media (prefers-reduced-motion: no-preference) {
+				// animation: App-logo-spin 1 1250ms ease-in-out;
+				animation: appScale 333ms alternate 3 ease forwards;
+			}
+
+			// @keyframes App-logo-spin {
+			//     from {
+			//         transform: rotateY(0deg);
+			//     }
+			//     to {
+			//         transform: rotateY(360deg);
+			//     }
+			// }
+
+			@keyframes appScale {
+				from {
+					transform: scale(1);
+				}
+				to {
+					transform: scale(1.4);
+				}
+			}
+		}
+	}
+	@include respond(med) {
+		#profile {
+			max-width: 768px;
+			margin: 0 auto;
+		}
+	}
+}
+
+.bio__contacts {
+	animation: fadeInAnimation ease-out 2000ms;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+	@keyframes fadeInAnimation {
+		0% {
+			opacity: 0.1;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+}
