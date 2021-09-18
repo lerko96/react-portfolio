@@ -22,6 +22,7 @@ const Profile = () => (
 				<div class='bio__contacts' id='contact'>
 					<a
 						href='https://www.linkedin.com/in/tyler-koenig-72607a18b/'
+						rel='noreferrer'
 						target='_blank'
 						title='LinkedIn'
 					>
@@ -32,6 +33,7 @@ const Profile = () => (
 					</a>
 					<a
 						href='https://github.com/lerko96'
+						rel='noreferrer'
 						target='_blank'
 						title='github'
 					>
@@ -39,6 +41,7 @@ const Profile = () => (
 					</a>
 					<a
 						href='mailto:tylerkng96@icloud.com'
+						rel='noreferrer'
 						target='_blank'
 						title='email'
 					>

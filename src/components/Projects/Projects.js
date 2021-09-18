@@ -14,6 +14,7 @@ const Projects = () => (
 			<a
 				class='project__img_link'
 				href='https://github.com/lerko96/were-hooked-repo'
+				rel='noreferrer'
 				target='_blank'
 			>
 				<img
@@ -26,6 +27,7 @@ const Projects = () => (
 				<h3 class='project__title'>
 					<a
 						href='https://github.com/lerko96/were-hooked-repo'
+						rel='noreferrer'
 						target='_blank'
 					>
 						We're Hooked
@@ -71,6 +73,7 @@ const Projects = () => (
 			<a
 				class='project__img_link'
 				href='https://github.com/lerko96/mystery-educator'
+				rel='noreferrer'
 				target='_blank'
 			>
 				<img class='project__img' src={mysteryEducator} alt='' />
@@ -79,6 +82,7 @@ const Projects = () => (
 				<h3 class='project__title'>
 					<a
 						href='https://github.com/lerko96/mystery-educator'
+						rel='noreferrer'
 						target='_blank'
 					>
 						Mystery Educator
@@ -123,6 +127,7 @@ const Projects = () => (
 			<a
 				class='project__img_link'
 				href='https://github.com/lerko96/donut-clicker-lerko96'
+				rel='noreferrer'
 				target='_blank'
 			>
 				<img
@@ -135,6 +140,7 @@ const Projects = () => (
 				<h3 class='project__title'>
 					<a
 						href='https://github.com/lerko96/donut-clicker-lerko96'
+						rel='noreferrer'
 						target='_blank'
 					>
 						Donut Clicker
@@ -171,6 +177,7 @@ const Projects = () => (
 			<a
 				class='project__img_link'
 				href='https://github.com/lerko96/trek'
+				rel='noreferrer'
 				target='_blank'
 			>
 				<img
@@ -181,7 +188,7 @@ const Projects = () => (
 			</a>
 			<div class='project__text'>
 				<h3 class='project__title'>
-					<a href='https://github.com/lerko96/trek' target='_blank'>
+					<a href='https://github.com/lerko96/trek' rel='noreferrer' target='_blank'>
 						Trekking Site
 					</a>
 				</h3>
@@ -222,6 +229,7 @@ const Projects = () => (
 			<a
 				class='project__img_link'
 				href='https://github.com/lerko96/reviews-mvc'
+				rel='noreferrer'
 				target='_blank'
 			>
 				<img
@@ -234,6 +242,7 @@ const Projects = () => (
 				<h3 class='project__title'>
 					<a
 						href='https://github.com/lerko96/reviews-mvc'
+						rel='noreferrer'
 						target='_blank'
 					>
 						Movie Reviews

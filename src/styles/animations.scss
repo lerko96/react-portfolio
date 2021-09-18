@@ -1,5 +1,5 @@
 .App {
-	@include respond(xsm) {
+	@include respond-below(xs) {
 		@media (prefers-reduced-motion: no-preference) {
 			animation: appScaleRv 500ms alternate 1 ease forwards;
 			// 	// animation-delay: 1s;
@@ -27,7 +27,7 @@
 			}
 		}
 	}
-	@include respond(sm) {
+	@include respond-above(xs) {
 		margin: 0 auto;
 		max-width: 768px;
 
@@ -56,7 +56,7 @@
 			}
 		}
 	}
-	@include respond(med) {
+	@include respond-above(md) {
 		#profile {
 			max-width: 768px;
 			margin: 0 auto;
