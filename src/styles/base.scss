@@ -53,7 +53,7 @@ body {
 	}
 
 	@include respond-above(xs) {
-		// margin: 0 auto;
+		// margin: 0 1rem;
 		// max-width: 768px;
 	}
 }
@@ -65,7 +65,7 @@ header {
 	min-height: 150px;
 }
 
-// .wrapper_main {
-// 	margin: 0 auto;
-// 	max-width: 768px;
-// }
+.wrapper_main {
+	margin: 0 1rem;
+	// max-width: 768px;
+}
