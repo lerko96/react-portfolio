@@ -3,8 +3,8 @@ import React from 'react';
 
 import './App.scss';
 // import Greet from './components/Greet';
-import Nav from './components/Nav/Nav';
-import Footer from './components/Footer/Footer';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 import Main from './components/Main/Main';
 
 // fix dark mode
@@ -39,10 +39,15 @@ function App() {
 	return (
 		<div className='App'>
 			<Nav />
-			<label class='switch-wrap'>
-				<input type='checkbox' onClick={() => setDarkMode(!darkMode)} />
-				<div class='switch'></div>
-			</label>
+			<div class='switch-container'>
+				<label class='switch-wrap'>
+					<input
+						type='checkbox'
+						onClick={() => setDarkMode(!darkMode)}
+					/>
+					<div class='switch'></div>
+				</label>
+			</div>
 			<Main />
 			<Footer />
 		</div>

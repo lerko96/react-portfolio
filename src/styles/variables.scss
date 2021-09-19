@@ -44,3 +44,7 @@ $transition-hl: 150ms ease;
 $shadow-360: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
 $shadow-360-og: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
 $shadow-360-inset: inset -10px -20px 20px 1px rgba(0, 0, 0, 0.2);
+
+$sw-width: 50px;
+$sw-padding: 6px;
+$sw-height: $sw-width / 2 + $sw-padding;

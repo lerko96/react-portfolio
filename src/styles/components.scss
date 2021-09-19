@@ -31,14 +31,14 @@ nav {
 	}
 }
 
-$sw-width: 50px;
-$sw-padding: 6px;
-$sw-height: $sw-width / 2 + $sw-padding;
+.switch-container {
+	position: relative;
+}
 
 .switch-wrap {
 	position: absolute;
 	right: 1rem;
-	top: 110px;
+	bottom: 27px;
 	cursor: pointer;
 	background: $grey;
 	padding: $sw-padding;
@@ -52,6 +52,7 @@ $sw-height: $sw-width / 2 + $sw-padding;
 		height: 0;
 	}
 }
+
 .switch {
 	height: 100%;
 	display: grid;
@@ -66,6 +67,7 @@ $sw-height: $sw-width / 2 + $sw-padding;
 		transition: background 0.2s;
 	}
 }
+
 input:checked {
 	+ .switch {
 		grid-template-columns: 1fr 1fr 0fr;
@@ -80,9 +82,9 @@ input:checked {
 	right: 1em;
 }
 
-.wrapper_main {
-	margin: 0 1rem;
-}
+// .wrapper_main {
+// 	margin: 0 1rem;
+// }
 
 #profile {
 	h2 {
@@ -379,7 +381,7 @@ input:checked {
 
 	// :hover {
 	// }
-	@include respond-above(md) {
+	@include respond-above(sm) {
 		// display: flex;
 		// flex-direction: row;
 		flex-wrap: inherit;
