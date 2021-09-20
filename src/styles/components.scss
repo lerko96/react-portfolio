@@ -395,3 +395,30 @@ input:checked {
 		}
 	}
 }
+
+footer {
+	display: flex;
+	flex-direction: column-reverse;
+	text-align: center;
+	justify-content: center;
+	margin: 0 auto;
+	// height: 200px;
+	max-width: 500px;
+	.foot__links {
+		// border: 1px solid yellow;
+		font-size: 2rem;
+		display: flex;
+		justify-content: space-evenly;
+		margin-bottom: 50px;
+		a {
+			color: $green2;
+
+			:hover {
+				color: $green3;
+			}
+		}
+	}
+	.copyright {
+		margin-bottom: 20px;
+	}
+}

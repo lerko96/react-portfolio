@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => (
 	<footer>
-		<span id='copyright'>&copy; 2021 Tyler Koenig</span>
-		<div id='footLinks'>
+		<span class='copyright'>&copy; 2021 Tyler Koenig</span>
+		<div class='foot__links'>
 			<a
 				href='https://github.com/lerko96'
 				rel='noreferrer'
