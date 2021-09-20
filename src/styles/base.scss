@@ -48,6 +48,7 @@ body {
 	.project {
 		background: $black;
 		color: $white;
+		box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.2);
 
 		.project__title a {
 			color: $white;
