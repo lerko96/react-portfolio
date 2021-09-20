@@ -2,16 +2,10 @@
 import React from 'react';
 
 import './App.scss';
-// import Greet from './components/Greet';
 import Nav from './components/Nav';
+import Profile from './components/Profile';
+import Projects from './components/Projects';
 import Footer from './components/Footer';
-import Main from './components/Main/Main';
-
-// fix dark mode
-// function mySwitch() {
-// 	var element2 = document.body;
-// 	element2.classList.toggle('dark');
-// }
 
 function App() {
 	const [darkMode, setDarkMode] = React.useState(false);
@@ -38,18 +32,21 @@ function App() {
 
 	return (
 		<div className='App'>
-			<Nav />
-			<div class='switch-container'>
-				<label class='switch-wrap'>
-					<input
-						type='checkbox'
-						onClick={() => setDarkMode(!darkMode)}
-					/>
-					<div class='switch'></div>
-				</label>
+			<div class='app__wrapper'>
+				<Nav />
+				<div class='switch-container'>
+					<label class='switch-wrap'>
+						<input
+							type='checkbox'
+							onClick={() => setDarkMode(!darkMode)}
+						/>
+						<div class='switch'></div>
+					</label>
+				</div>
+				<Profile />
+				<Projects />
+				<Footer />
 			</div>
-			<Main />
-			<Footer />
 		</div>
 	);
 }

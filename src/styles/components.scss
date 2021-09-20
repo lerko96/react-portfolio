@@ -5,28 +5,28 @@ nav {
 	justify-content: space-between;
 	#logo {
 		font-size: $fs-xl;
-		font-weight: $weight-heavy;
+		font-weight: $fw-7;
 		letter-spacing: 0.2rem;
 		margin-left: 8px;
 		a {
-			color: $color-grey;
+			color: $grey2;
 		}
 		a:hover {
-			color: $color-dark;
+			color: $black2;
 		}
 	}
 	#nav__list {
 		text-align: end;
-		font-weight: $weight-mid;
+		font-weight: $fw-5;
 		font-size: 0.8rem;
 		letter-spacing: 0.02rem;
 	}
 	a {
-		color: $color-dark;
+		color: $black2;
 	}
 	a:hover {
-		background-color: $color-green;
-		color: $color-dark2;
+		background-color: $green;
+		color: $black;
 		transition: $transition-hl;
 	}
 }
@@ -37,8 +37,8 @@ nav {
 
 .switch-wrap {
 	position: absolute;
-	right: 1rem;
-	bottom: 27px;
+	right: 0;
+	bottom: 25px;
 	cursor: pointer;
 	background: $grey;
 	padding: $sw-padding;
@@ -77,74 +77,49 @@ input:checked {
 	}
 }
 
-#darkBtn {
-	position: absolute;
-	right: 1em;
-}
-
-// .wrapper_main {
-// 	margin: 0 1rem;
-// }
-
 #profile {
+	// min-height: 80vh;
 	h2 {
 		display: none;
 	}
 }
 
 .profile__card {
-	// border: 1px solid red;
-	// display: flex;
-	// flex-direction: row-reverse;
 	flex-direction: column;
-	// margin: 30px 0 5px;
-	// padding: 30px 0 5px;
 	text-align: center;
 
 	.card__img {
 		margin-bottom: 8px;
-		// border: 1px solid green;
 
 		#headshot {
 			height: 125px;
 			width: 125px;
-			// display: flex;
-			border: 3px solid #151515;
+			border: 3px solid $black2;
 			border-radius: 50%;
 			box-shadow: $shadow-360;
-			// transition: scale 500ms ease-in-out;
 		}
 	}
 
 	.card__bio {
-		// flex: 2;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		transition: padding-top 800ms ease;
-		// justify-content: space-between;
-		// padding-top: 20px;
 
 		.bio__name {
 			line-height: 0.9em;
 			font-size: $fs-xl;
-			font-weight: $weight-heavy;
-			// letter-spacing: 0.05rem;
-			// text-align: center;
+			font-weight: $fw-7;
 
 			a {
 				padding: 0;
-				// color: $color-dark;
 			}
 		}
 
 		.bio__desc {
-			// margin-top: 5px;
 			margin: 8px auto 14px;
-			// align-content: center;
-			font-weight: $weight-mid;
+			font-weight: $fw-6;
 			font-size: 1.1rem;
-			// width: 75px;
 		}
 
 		.bio__contacts {
@@ -154,11 +129,12 @@ input:checked {
 			justify-content: space-between;
 
 			a {
-				color: $color-lgrey;
+				border: 1px solid blue;
+				color: $grey4;
 				margin: 0;
 
 				&:hover {
-					color: $color-grey;
+					color: $grey2;
 					transition: $transition-hl;
 				}
 			}
@@ -171,32 +147,20 @@ input:checked {
 			transition: none;
 		}
 	}
-
-	// @include respond-above(md) {
-	// 	display: flex;
-	// 	flex-direction: row;
-	// 	align-items: center;
-	// 	justify-content: center;
-	// 	.card__img {
-	// 		flex: 1;
-	// 		display: flex;
-	// 		justify-content: end;
-	// 	}
-	// 	.card__bio {
-	// 		flex: 2;
-	// 	}
-	// }
 }
 
 .profile__about {
-	// margin: 0 auto;
-	// padding: 30px 0 20px;
 	margin: 2em auto;
 	line-height: 1.8em;
-	max-width: 635px;
+	max-width: 764px;
+
 	@include respond-above(xs) {
 		padding-top: 10px;
 		padding-bottom: 30px;
+	}
+
+	@include respond-above(sm) {
+		// margin: 2em 3rem;
 	}
 	transition: padding-top 800ms ease;
 }
@@ -209,8 +173,6 @@ input:checked {
 	}
 
 	li {
-		// background:  $color-lgrey;
-		// box-shadow: $shadow-360-inset;
 		border: 1px solid $color-grey;
 		border-radius: 2px;
 		padding: 4px 12px;
@@ -220,7 +182,6 @@ input:checked {
 	@include respond-above(xs) {
 		margin: 0 auto;
 		max-width: 613px;
-		// padding: 0 50px;
 	}
 }
 
@@ -228,11 +189,15 @@ input:checked {
 	padding: 70px 0 60px;
 
 	h2 {
-		// display: none;
+		display: none;
 		color: $color-grey;
 		font-size: $fs-xl;
-		// padding-bottom: 10px;
 	}
+
+	// @include respond-above(sm) {
+	// 	max-width: 990px;
+	// 	margin: 3rem auto;
+	// }
 }
 
 .project {
@@ -241,14 +206,13 @@ input:checked {
 	flex-direction: column;
 	box-shadow: $shadow-360;
 	border-radius: 10px;
-	margin: 3rem 0;
+	margin: 3rem auto;
 	overflow: hidden;
 	position: relative;
+	// max-width: 800px;
 
 	a,
 	a:hover {
-		// transition: color 0.25s ease-in-out;
-		// transition: background 300ms ease-in-out;
 		color: $color-dark;
 	}
 
@@ -274,7 +238,6 @@ input:checked {
 		}
 
 		:hover {
-			// color: $color-blue;
 			background: $color-green;
 		}
 	}
@@ -304,7 +267,7 @@ input:checked {
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		background: $color-light;
+		// background: $color-light;
 	}
 
 	.project__info {
@@ -350,14 +313,6 @@ input:checked {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		// background-image: linear-gradient(
-		//     -30deg,
-		//     rgba(176, 176, 176, 0.9),
-		//     transparent 50%
-		// );
-		// box-shadow: $shadow-360-inset;
-		// box-shadow: $shadow-360;
-		// background-image: linear-gradient(-30deg, #110f16, transparent 50%);
 		opacity: 1;
 		border-radius: 10px;
 	}
@@ -379,11 +334,7 @@ input:checked {
 		}
 	}
 
-	// :hover {
-	// }
 	@include respond-above(sm) {
-		// display: flex;
-		// flex-direction: row;
 		flex-wrap: inherit;
 
 		a {

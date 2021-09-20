@@ -10,11 +10,11 @@ html {
 }
 
 body {
-	background: $background-light;
-	color: $color-dark;
+	background: $white2;
+	color: $black;
 	display: flex;
 	flex-direction: column;
-	font-weight: $weight-norm;
+	font-weight: $fw-4;
 	text-align: start;
 	text-rendering: optimizeLegibility;
 	transition: background 0.2s linear;
@@ -25,7 +25,7 @@ body {
 }
 
 .dark {
-	background: $background-dark;
+	background: $black2;
 	color: $color-light;
 
 	#logo {
@@ -45,27 +45,75 @@ body {
 			}
 		}
 	}
+	.project {
+		background: $black;
+		color: $white;
+
+		.project__title a {
+			color: $white;
+		}
+
+		.project__info {
+			color: $white;
+		}
+
+		@include respond-above(sm) {
+			.project__title a {
+				color: $grey3;
+			}
+
+			.project__info {
+				color: $grey3;
+			}
+		}
+
+		&:hover {
+			.project__bar {
+				background-color: $grey4;
+			}
+			.project__title a {
+				color: $white;
+			}
+			.project__info {
+				color: $white;
+			}
+		}
+		.project__tagbox {
+			.tag__item {
+				background: $grey4;
+				:hover {
+					background: $grey2;
+				}
+			}
+		}
+	}
 }
 
 .App {
+	margin: 0 auto;
+
 	ul {
 		list-style-type: none;
 	}
 
 	@include respond-above(xs) {
 		// margin: 0 1rem;
-		// max-width: 768px;
+		max-width: 990px;
 	}
+}
+
+.app__wrapper {
+	margin: auto 1rem;
 }
 
 header {
 	line-height: 1.7;
-	margin: 0 1rem;
+	// margin: 0 1rem;
 	padding-top: 30px;
 	min-height: 150px;
 }
 
-.wrapper_main {
-	margin: 0 1rem;
-	// max-width: 768px;
-}
+// .wrapper_main {
+// 	// margin: 0 1rem;
+// 	// max-width: 768px;
+// }

@@ -1,10 +1,10 @@
 import React from 'react';
 
-import wereHooked from '../../images/were-hooked.png';
-import donutClicker from '../../images/donut-clicker.png';
-import mysteryEducator from '../../images/mystery-educator.png';
-import trekkingSite from '../../images/trek.png';
-import reviewSite from '../../images/review-site.png';
+import wereHooked from '../images/were-hooked.png';
+import donutClicker from '../images/donut-clicker.png';
+import mysteryEducator from '../images/mystery-educator.png';
+import trekkingSite from '../images/trek.png';
+// import reviewSite from '../images/review-site.png';
 
 const Projects = () => (
 	<section id='projects'>
@@ -51,17 +51,17 @@ const Projects = () => (
 					</p>
 				</div>
 				<ul class='project__tagbox'>
-					<li class='tag__item'>JavaScript</li>
-					<li class='tag__item'>RESTful APIs</li>
 					<li class='tag__item'>Java</li>
-					<li class='tag__item'>OOP</li>
+					<li class='tag__item'>Spring</li>
+					<li class='tag__item'>JavaScript</li>
+					<li class='tag__item'>Restful API</li>
 					<li class='tag__item'>Thymeleaf</li>
 					<li class='tag__item'>HTML</li>
 					<li class='tag__item'>CSS</li>
 					<li class='tag__item'>Responsive Design</li>
-					<li class='tag__item'>TDD</li>
-					<li class='tag__item'>VS Code</li>
-					<li class='tag__item'>Github</li>
+					{/* <li class='tag__item'>TDD</li> */}
+					{/* <li class='tag__item'>VS Code</li> */}
+					<li class='tag__item'>Git</li>
 					<li class='tag__item'>Agile</li>
 					<li class='tag__item'>Scrum</li>
 					<li class='tag__item'>Zoom</li>
@@ -107,15 +107,17 @@ const Projects = () => (
 				</div>
 				<ul class='project__tagbox'>
 					<li class='tag__item'>JavaScript</li>
+
 					<li class='tag__item'>Node.js</li>
+					<li class='tag__item'>Spring</li>
 					<li class='tag__item'>RESTful APIs</li>
 					<li class='tag__item'>Java</li>
 					<li class='tag__item'>HTML</li>
 					<li class='tag__item'>CSS</li>
 					<li class='tag__item'>Responsive Design</li>
-					<li class='tag__item'>TDD</li>
-					<li class='tag__item'>VS Code</li>
-					<li class='tag__item'>Github</li>
+					{/* <li class='tag__item'>TDD</li> */}
+					{/* <li class='tag__item'>VS Code</li> */}
+					<li class='tag__item'>Git</li>
 					<li class='tag__item'>Agile</li>
 					<li class='tag__item'>Scrum</li>
 					<li class='tag__item'>Zoom</li>
@@ -168,8 +170,8 @@ const Projects = () => (
 					<li class='tag__item'>CSS</li>
 					<li class='tag__item'>Responsive Design</li>
 					<li class='tag__item'>TDD</li>
-					<li class='tag__item'>VS Code</li>
-					<li class='tag__item'>Github</li>
+					{/* <li class='tag__item'>VS Code</li> */}
+					<li class='tag__item'>Git</li>
 				</ul>
 			</div>
 		</article>
@@ -188,7 +190,11 @@ const Projects = () => (
 			</a>
 			<div class='project__text'>
 				<h3 class='project__title'>
-					<a href='https://github.com/lerko96/trek' rel='noreferrer' target='_blank'>
+					<a
+						href='https://github.com/lerko96/trek'
+						rel='noreferrer'
+						target='_blank'
+					>
 						Trekking Site
 					</a>
 				</h3>
@@ -210,14 +216,14 @@ const Projects = () => (
 				</div>
 				<ul class='project__tagbox'>
 					<li class='tag__item'>Java</li>
-					<li class='tag__item'>SpringJPA</li>
-					<li class='tag__item'>OOP</li>
+					<li class='tag__item'>Spring</li>
+					{/* <li class='tag__item'>OOP</li> */}
 					<li class='tag__item'>HTML</li>
 					<li class='tag__item'>CSS</li>
 					<li class='tag__item'>Responsive Design</li>
 					<li class='tag__item'>TDD</li>
-					<li class='tag__item'>IntelliJ</li>
-					<li class='tag__item'>Github</li>
+					{/* <li class='tag__item'>IntelliJ</li> */}
+					<li class='tag__item'>Git</li>
 					<li class='tag__item'>Agile</li>
 					<li class='tag__item'>Scrum</li>
 					<li class='tag__item'>Zoom</li>
@@ -225,7 +231,7 @@ const Projects = () => (
 				</ul>
 			</div>
 		</article>
-		<article class='project'>
+		{/* <article class='project'>
 			<a
 				class='project__img_link'
 				href='https://github.com/lerko96/reviews-mvc'
@@ -274,7 +280,7 @@ const Projects = () => (
 					<li class='tag__item'>Github</li>
 				</ul>
 			</div>
-		</article>
+		</article> */}
 	</section>
 );
 
