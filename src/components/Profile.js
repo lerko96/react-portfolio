@@ -1,6 +1,6 @@
 import React from 'react';
 
-import headshot from '../../images/headshot-tyler_koenig.png';
+import headshot from '../images/headshot-tyler_koenig.png';
 
 // function Greet() {
 //     return <p>Hello TK</p>
@@ -22,6 +22,7 @@ const Profile = () => (
 				<div class='bio__contacts' id='contact'>
 					<a
 						href='https://www.linkedin.com/in/tyler-koenig-72607a18b/'
+						rel='noreferrer'
 						target='_blank'
 						title='LinkedIn'
 					>
@@ -32,6 +33,7 @@ const Profile = () => (
 					</a>
 					<a
 						href='https://github.com/lerko96'
+						rel='noreferrer'
 						target='_blank'
 						title='github'
 					>
@@ -39,6 +41,7 @@ const Profile = () => (
 					</a>
 					<a
 						href='mailto:tylerkng96@icloud.com'
+						rel='noreferrer'
 						target='_blank'
 						title='email'
 					>
@@ -70,20 +73,21 @@ const Profile = () => (
 			<ul>
 				<li>Java</li>
 				<li>Spring</li>
-				<li>Thymeleaf</li>
-				<li>JavaScript</li>
 				<li>MVC</li>
+				<li>JavaScript</li>
+				<li>JSON</li>
+				<li>Restful APIs</li>
+				<li>Test Driven Development</li>
+				<li>Relational Databases</li>
+				<li>Git</li>
+				<li>Agile/ Scrum</li>
 				<li>HTML</li>
 				<li>CSS</li>
-				<li>Test Driven Development</li>
-				<li>Agile (Scrum)</li>
-				<li>Object Oriented Programming</li>
-				<li>JSON</li>
+				<li>SCSS</li>
 				<li>React</li>
-				<li>REST APIs</li>
 				<li>Responsive Design</li>
-				<li>Relational Databases</li>
-				<li>Source Control/ Github</li>
+				<li>Thymeleaf</li>
+				{/* <li>Object Oriented Programming</li> */}
 			</ul>
 		</article>
 	</section>

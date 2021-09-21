@@ -24,6 +24,11 @@ const Nav = () => (
 						</a>
 					</li>
 					{/* <li>
+						<button onClick={() => setDarkMode(!darkMode)}>
+							Toggle Dark Mode
+						</button>
+					</li> */}
+					{/* <li>
 						<a href='#skills' target='_self'>
 							SKILLS
 						</a>
